@@ -10,6 +10,10 @@ describe Solver do
       result = @solver.factorial(0)
       expect(result).to eq 1
     end
+
+    it 'handle a negative value' do
+        result = @solver.factorial(-2)
+        exception(result).to match ('No negative integer. This is exception')
   end
 
   context 'reverse method' do
