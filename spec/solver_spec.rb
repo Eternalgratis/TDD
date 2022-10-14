@@ -12,8 +12,9 @@ describe Solver do
     end
 
     it 'handle a negative value' do
-        result = @solver.factorial(-2)
-        exception(result).to match ('No negative integer. This is exception')
+      result = @solver.factorial(-2)
+      expect(result).to match('No negative integer. This is exception')
+    end
   end
 
   context 'reverse method' do
