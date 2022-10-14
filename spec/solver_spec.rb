@@ -34,5 +34,10 @@ describe Solver do
             result = @solver.fizzbuzz(45)
             expect(result).to eq 'fizzbuzz'
         end
+
+        it 'when n is not fizzbuzz return n' do
+            result = @solver.fizzbuzz(7)
+            expect(result).to eq 7
+        end
     end
 end
