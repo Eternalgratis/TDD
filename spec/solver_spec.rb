@@ -12,12 +12,12 @@ describe Solver do
         end
     end    
     
-    # context 'reverse method' do
-    #     it 'take word and return the reverse for that word' do
-    #         result = @solver.reverse('hello')
-    #         expect(result).to eq 'olleh'
-    #     end
-    # end
+    context 'reverse method' do
+        it 'take word and return the reverse for that word' do
+            result = @solver.reverse('hello')
+            expect(result).to eq 'olleh'
+        end
+    end
 
     # context 'fizzbuzz method' do
     #     it 'when n is divisible by 3' do
